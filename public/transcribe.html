@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Transcription</title>
+    <link rel="stylesheet" href="transcibe.css">
+    <link rel="shortcut icon" href="./favicon_io/favicon-32x32.png" type="image/x-icon" />
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="container">
+            <h1>Audio File:</h1>
+            <p id="audioFileName"></p>
+          
+            <h1>Transcription:</h1>
+            <p id="transcription"></p>
+           </div>
+    </div>
+ 
+ 
+ 
+ <script>
+     const audioFileName = localStorage.getItem("audioFileName");
+     const transcription = localStorage.getItem("transcription");
+     document.getElementById("audioFileName").innerHTML = audioFileName;
+     document.getElementById("transcription").innerHTML = transcription;
+ </script>
+</body>
+</html>
